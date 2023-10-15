@@ -1,5 +1,5 @@
 .container {
-    background-color: #ffffff;;
+    background-color: #ffffff;
     width: 375px;
     margin: auto;
     padding: 0%;
@@ -50,6 +50,7 @@
     &__link {
         padding-top: 20px;
         color: #ae1332;
+        fill: #ae1332;
         text-decoration: none;
         align-items: center;
         font-size: 14px;
@@ -64,6 +65,7 @@
     &__icon {
         width: 16px;
         height: 16px;
+        fill: #ae1332;
     }
 
     &__follow {
@@ -170,11 +172,17 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        background-color: #ffffff;;
+        background-color: #ffffff;
         width: 768px;
         margin: auto;
         padding: 0%;
         height: 475px; //este es para quitar
+        &--tablet{
+            width: 311px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
     }
     
     .footer {
@@ -182,9 +190,15 @@
         width: 768px;
     
         &__section {
-        flex-direction: initial;
+        display: flex;
+        flex-direction: row;
         padding-left: 32px;
         padding-right: 32px;
+        }
+
+        &__list{
+            padding-left: 32px;
+            margin: 0;
         }
     
         &__img {
@@ -201,7 +215,11 @@
             padding-bottom: 80px;
         }
     }
-    
+    .menu {
+        &__list {
+            padding-left: 35px;
+        }
+    }
     .address{
         
         &__list{  
@@ -221,62 +239,48 @@
         margin: 0;
         }
     }
+//  de 768 para abajo aplica esto, hasta el siguiente pumto de interrupcion
 }
 
-//  de 768 para arriba aplica esto, hasta el siguiente pumto de interrupcion
 
 @media screen and (min-width: 1280px) {
-        .container {
-            background-color: #d78989;;
-            width: 1280px;
-            margin: auto;
-            padding: 0%;
-            height: 475px; //este es para quitar
-        }
-        
-        .footer {
-            height: 377px;
-            width: 1280px;
-        
-            &__section {;
-            padding-left: 32px;
-            padding-right: 32px;
-            }
-        
-            &__list {
-            
-            }
-        
-            &__subscribe {
-            padding-bottom: 110px;
-            }
-        
-            &__menu {
-                ;
-                padding-top: 80px;
-                padding-bottom: 80px;
-            }
-        }
-        
-        .address{
-            
-            &__list{  
-            padding-top: 0;
-            margin: 0;
-            }
-        
-            &__item,
-            &__link {
-            text-align: initial;
-            font-size: 18px;
-            }
-        }
-        
-        .follow{
-            &__list {
-            margin: 0;
-            }
+    .container{
+        background-color: #ffffff;
+        width: 1280px;
+        height: 377px; //este es para quitar
+        margin:auto;
+        &--tablet{
+            flex-direction: initial;
+            align-items: center;
+            column-gap: 120px;
         }
     }
+
+    .footer {
+        height: 377px;
+        width: 1280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     
-//  de 768 para arriba aplica esto, hasta el siguiente pumto de interrupcion
+        &__section {
+        display: flex;
+        flex-direction: initial;
+        justify-content: space-between;
+        align-items: center;
+        }
+    }
+
+    .menu {
+        &__list {
+            width: 260px;
+        }
+    }
+
+    .follow{
+        &__list {
+        padding-top: 80px;
+        }
+    }
+     //de 768 para arriba aplica esto, hasta el siguiente pumto de interrupcion
+}
