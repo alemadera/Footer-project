@@ -5,7 +5,7 @@
   "homepage": "https://alemadera.github.io/footer-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /footer-project/"
+    "build": "parcel build src/*.html --public-url /footer-project/p"
   },
   "repository": {
     "type": "git",
