@@ -24,7 +24,6 @@
         top: 89px;
         position: relative;   
         max-width: 335px; 
-        left: 20px;
         height: auto; 
         justify-content: center; 
         align-items: center; 
@@ -189,10 +188,12 @@
             justify-content: center;
         }
         &__title {
-        top: 0;
         font-size: 54px;
         font-weight: 500;
         line-height: 1;
+        left: 4%;
+        width: 90%;
+        letter-spacing: -0.04em;
         }
         &__images{
             max-width: 768px; 
@@ -244,13 +245,6 @@
             justify-content: flex-start;
             align-items: center;
             gap: 15px;
-        }
-        &__title {
-            top: 1%;
-            left: 4%;
-            width: 90%;
-            font-size: 54px; 
-            letter-spacing: -0.04em;
         }
     /* Agregar otros ajustes de estilo para pantallas pequeñas aquí */
     }
